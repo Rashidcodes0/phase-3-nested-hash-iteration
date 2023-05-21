@@ -19,6 +19,11 @@ end
 
 def remove_strawberry(contacts)
   # your code here!
+  
+    contacts.each do |_, contact|
+      contact[:favorite_ice_cream_flavors].delete("strawberry")
+    end
+    contacts
 end
 
 # print the output to the terminal for inspection
